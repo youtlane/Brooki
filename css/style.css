@@ -62,10 +62,7 @@ a:hover{
     color: var(--main-color) ;
 
 }
-/**************************juste pour voir supprimer apres**************************************************************************/
-.hebergements-and-populaires {
-    padding-top: 65px;
-  }
+
 /********************header********************/
 
 header{
@@ -77,7 +74,7 @@ header{
 /******nav******/
 nav{
     display: flex;
- }
+}
 nav a{
     font-size: 16px;
     padding-top: 15px;
@@ -86,9 +83,11 @@ nav a{
 nav a:hover{
     border-top: 2px solid var(--main-color);
 }
-/***************headline-seach-filter********/
+/*******************************headline-seach-filter-info***********************/
+
+/********headline*************/
 .Headline{
-    padding-top: 30px;
+    margin-top: 30px;
     
 }
 .Headline h1{
@@ -96,35 +95,29 @@ nav a:hover{
     font-size: 22px;
 }
 .Headline p {
-    padding-top: 8px;
-    margin: 0;
+    margin-top: 8px;
     
-  }
-/********class to adjust icons in the miidlle ********/
-.center-icon{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
 }
 
 /********Search-bar*************/
-.headline-search-filter {
-    padding-top: 35px;
-  }
+.headline-search-filter , .list-filters , .info-bar , .hebergements-and-populaires   {
+    margin-top: 35px;
+}
 
 .search-form {
     display: flex;
     height: 49px;
-   
+
 }
 .search-form .fa-solid{
     color: black;
-}
-
-#center-icon {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+form i{
     width: 50px;
     border-radius: 20px 0 0 20px;
     background-color: var(--main-bg-color);
@@ -135,36 +128,70 @@ nav a:hover{
     border: 1px solid var(--main-bg-color);
     font-size: 18px;
 
-  }
-  #recherche-input::placeholder{
+}
+#recherche-input::placeholder{
     color: black;
     opacity: 100%;
-  }
-  .button-search {
-    background-color: var(--main-color);
-     color: white;
-     font-size: 16px;
-     font-weight: 700;
-     border-radius: 0 15px 15px 0 ;
-     padding: 15px 16px ;
-     border: none;
-     cursor: grabbing;
 }
-     
-   
+.button-search {
+    background-color: var(--main-color);
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 0 15px 15px 0 ;
+    padding: 15px 16px ;
+    border: none;
+    cursor: grabbing;
+}
+/***********list-filter*************/
+h2 {
+    margin: 0;
+}
+.list-filters {
+    display: flex;
+    align-items: center;
+    gap:15px;
+    
+}
+.filter {
+    padding: 4px 19px;
+    border: 2px solid var(--main-bg-color);
+    border-radius: 50px ;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 42px;
 
+}
+.filter i{
+font-size: 22px;
+}
+.filter h3 {
+    margin-left: 10px;
+    font-size: 17px;
+    font-weight: bold;
+}
 
-
-
-
-
-
-
-
-
-
-  
-
+/**************info-bar********************/
+.info-bar {
+    display:  flex;
+    align-items: center;
+    gap:10px;
+}
+.info-bar i{
+    width: 24px;
+    height: 24px;
+    border: 1px solid var(--main-bg-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info-bar p {
+    margin: 0;
+}
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
@@ -179,10 +206,38 @@ nav a:hover{
     box-sizing: border-box;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
 }
+.hebergement-cards {
+    margin-top: 30px;
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /****** Populaires ***********/
 .populaires {
