@@ -18,7 +18,9 @@
 <body>
     <div class="main-container">
         <header>
-            <img id="logo" src="images/logo/Booki.png" alt="Booki Logo">
+            <div class="logo-container">
+                <img  class="logo" src="images/logo/Booki.png" alt="Booki Logo">
+            </div>
             <nav class="logo-nav"> 
                 <a href="Hebergements.html">Hébergements</a>
                 <a href="Activites.html">Activités</a>
@@ -30,39 +32,49 @@
             <p>En plein centre-ville ou en pleine nature</p>
         </div>
 
-    <section class="headline-search-filter">
+    <section class="headline-search-filter">        
         <!--div Search-bar-->
         <div class="search-bar">
             <form action="index.html" method="post" class="search-form">
-                    <i class="fa-solid fa-location-dot "></i>
+                    <div class="icon-loclisation-style">
+                        <i class="fa-solid fa-location-dot "></i>
+                    </div>
                     <input id="recherche-input" type="text" placeholder="Marseille, France">
-                    <button type="submit" class="button-search">Rechercher</button>
+                    <button type="submit" class="button-search">Rechercher
+                        <span>
+                            <button class="button-search-mobile" type="submit">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </span>
+
+                    </button>
                 <!--button mobile 
-                <button class="btn-form-mobile" type="submit">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button> -->
+                 -->
             </form> 
         </div>
 
         <!---div filter-->
         <div class="list-filters">
             <h2>Filtres</h2>
-            <div class="filter">
-                <i class="fa-solid fa-money-bill-wave fa-sm"></i>
-                <h3>Économique</h3>
-            </div>
-            <div class="filter">
-                <i class="fa-solid fa-person fa-sm"></i>
-                <h3>Familial</h3>
-            </div>
-            <div class="filter">
-                <i class="fa-solid fa-heart fa-sm"></i>
-                <h3>Romantique</h3>
-            </div>
-            <div class="filter">
-                <i class="fa-solid fa-fire fa-sm"></i>
-                <h3>Nos pépites</h3>
-            </div>
+            
+                <div class="filter">
+                    <i class="fa-solid fa-money-bill-wave fa-sm"></i>
+                    <h3>Économique</h3>
+                </div>
+                <div class="filter">
+                    <i class="fa-solid fa-person fa-sm"></i>
+                    <h3>Familial</h3>
+                </div>
+                <div class="filter">
+                    <i class="fa-solid fa-heart fa-sm"></i>
+                    <h3>Romantique</h3>
+                </div>
+                <div class="filter">
+                    <i class="fa-solid fa-fire fa-sm"></i>
+                    <h3>Nos pépites</h3>
+                </div>
+            
+            
           </div>
           <div class="info-bar">
             <i class="fa-solid fa-info"></i>
@@ -75,7 +87,7 @@
             <div class="hebergements-and-populaires">
                 <!---div hebergement card-->
                 <section class="hebergements">
-                    <h2 class="section-title">Hébergements à Marseille</h2>
+                    <h2 class="section">Hébergements à Marseille</h2>
                     <article class="h-cards-container">
                         <div class="h-cards">
                             <div class="card">
