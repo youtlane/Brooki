@@ -27,13 +27,37 @@
             </nav>
         </header>
         <!-- headline div-->
+        
+
+    <section class="headline-search-filter"> 
         <div class="Headline">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre-ville ou en pleine nature</p>
         </div>
+        
+            <form class="form-search">
+                <div class="icon-search-input">
+                    <label class="icon-search">
+                        <i class="fa-solid fa-location-dot "></i>   
+                    </label>
+                    <input class="search-input" type="text" placeholder="Marseille, France">
+                </div>
+                <div class="search-button">
+                    <button type="submit" class="search-button-desktop">Rechercher</button>
+                    <button class="search-button-mobile" type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+                </form>
+            </form>
+        
+        
 
-    <section class="headline-search-filter">        
-        <!--div Search-bar-->
+
+
+
+
+        <!--div Search-bar
         <div class="search-bar">
             <form action="index.html" method="post" class="search-form">
                     <div class="icon-loclisation-style">
@@ -41,21 +65,25 @@
                     </div>
                     <input id="recherche-input" type="text" placeholder="Marseille, France">
                     <button type="submit" class="button-search">Rechercher
-                        <span>
-                            <button class="button-search-mobile" type="submit">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                            </button>
-                        </span>
+                    <span class="button-mobile">
+                        <button class="button-search-mobile" type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                    
+
 
                     </button>
-                <!--button mobile 
-                 -->
+                
+                 
             </form> 
-        </div>
+        </div>-->
 
         <!---div filter-->
         <div class="list-filters">
-            <h2>Filtres</h2>
+            <div class="filter-title">
+                <h2>Filtres</h2>
+            </div>
+            
             
                 <div class="filter">
                     <i class="fa-solid fa-money-bill-wave fa-sm"></i>
@@ -87,7 +115,7 @@
             <div class="hebergements-and-populaires">
                 <!---div hebergement card-->
                 <section class="hebergements">
-                    <h2 class="section">Hébergements à Marseille</h2>
+                    <h2 class="section-title">Hébergements à Marseille</h2>
                     <article class="h-cards-container">
                         <div class="h-cards">
                             <div class="card">
@@ -283,7 +311,7 @@
             </div>
             <!--------------------section activite--------->
             <section class="activites">
-                <h2>Activités à Marseille</h2>
+                <h2 class="section-title">Activités à Marseille</h2>
                 <div class="card-activites">
                 <div  class="acivite-txt">
                     <a href="#"  >
